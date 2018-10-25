@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ans="http://www.ans.gov.br/padroes/tiss/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ans.gov.br/tiss/ws/tipos/tissloteanexo/v30303" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="tissLoteAnexo" targetNamespace="http://www.ans.gov.br/tiss/ws/tipos/tissloteanexo/v30303" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/">
+      <xsd:import schemaLocation="tissWebServicesV3_03_03.xsd" namespace="http://www.ans.gov.br/padroes/tiss/schemas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="tissLoteAnexo_Request">
+    <wsdl:part name="loteAnexo" element="ans:loteAnexoWS" />
+  </wsdl:message>
+  <wsdl:message name="tissLoteAnexo_Response">
+    <wsdl:part name="protocoloRecebimentoAnexo" element="ans:protocoloRecebimentoAnexoWS" />
+  </wsdl:message>
+  <wsdl:message name="tissFault">
+    <wsdl:part name="tissFault" element="ans:tissFaultWS" />
+  </wsdl:message>
+  <wsdl:portType name="tissLoteAnexo_PortType">
+    <wsdl:operation name="tissLoteAnexo_Operation">
+      <wsdl:input message="tns:tissLoteAnexo_Request" />
+      <wsdl:output message="tns:tissLoteAnexo_Response" />
+      <wsdl:fault name="TissFault" message="tns:tissFault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="tissLoteAnexo_Binding" type="tns:tissLoteAnexo_PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="tissLoteAnexo_Operation">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TissFault">
+        <soap:fault use="literal" name="TissFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="tissLoteAnexo">
+    <wsdl:port name="tissLoteAnexo_Port" binding="tns:tissLoteAnexo_Binding">
+      <soap:address location="" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

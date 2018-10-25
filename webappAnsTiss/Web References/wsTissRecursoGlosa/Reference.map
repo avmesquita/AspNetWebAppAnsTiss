@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/xmldsig-core-schema.xsd" filename="xmldsig-core-schema.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/tissRecursoGlosaV3_03_03.wsdl" filename="tissRecursoGlosa.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/tissWebServicesV3_03_03.xsd" filename="tissWebServicesV3_03_03.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/tissV3_03_03.xsd" filename="tissV3_03_03.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/tissAssinaturaDigital_v1.01.xsd" filename="tissAssinaturaDigital_v1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/tissSimpleTypesV3_03_03.xsd" filename="tissSimpleTypesV3_03_03.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/tissComplexTypesV3_03_03.xsd" filename="tissComplexTypesV3_03_03.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///C:/Projetos/StackOverflowTests/ANS-TISS/Padrao_TISS_Comunicação 030303/tissGuiasV3_03_03.xsd" filename="tissGuiasV3_03_03.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

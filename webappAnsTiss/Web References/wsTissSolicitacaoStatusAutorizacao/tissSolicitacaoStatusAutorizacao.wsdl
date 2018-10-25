@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ans="http://www.ans.gov.br/padroes/tiss/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ans.gov.br/tiss/ws/tipos/tisssolicitacaostatusautorizacao/v30303" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="tissSolicitacaoStatusAutorizacao" targetNamespace="http://www.ans.gov.br/tiss/ws/tipos/tisssolicitacaostatusautorizacao/v30303" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/">
+      <xsd:import schemaLocation="tissWebServicesV3_03_03.xsd" namespace="http://www.ans.gov.br/padroes/tiss/schemas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="tissSolicitacaoStatusAutorizacao_Request">
+    <wsdl:part name="solicitacaoStatusAutorizacao" element="ans:solicitacaoStatusAutorizacaoWS" />
+  </wsdl:message>
+  <wsdl:message name="tissSolicitacaoStatusAutorizacao_Response">
+    <wsdl:part name="situacaoAutorizacao" element="ans:situacaoAutorizacaoWS" />
+  </wsdl:message>
+  <wsdl:message name="tissFault">
+    <wsdl:part name="tissFault" element="ans:tissFaultWS" />
+  </wsdl:message>
+  <wsdl:portType name="tissSolicitacaoStatusAutorizacao_PortType">
+    <wsdl:operation name="tissSolicitacaoStatusAutorizacao_Operation">
+      <wsdl:input message="tns:tissSolicitacaoStatusAutorizacao_Request" />
+      <wsdl:output message="tns:tissSolicitacaoStatusAutorizacao_Response" />
+      <wsdl:fault name="TissFault" message="tns:tissFault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="tissSolicitacaoStatusAutorizacao_Binding" type="tns:tissSolicitacaoStatusAutorizacao_PortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="tissSolicitacaoStatusAutorizacao_Operation">
+      <soap:operation soapAction="" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="TissFault">
+        <soap:fault use="literal" name="TissFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="tissSolicitacaoStatusAutorizacao">
+    <wsdl:port name="tissSolicitacaoStatusAutorizacao_Port" binding="tns:tissSolicitacaoStatusAutorizacao_Binding">
+      <soap:address location="" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

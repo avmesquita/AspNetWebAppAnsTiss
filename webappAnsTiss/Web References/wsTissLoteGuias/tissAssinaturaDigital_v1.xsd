@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ns1="http://www.ans.gov.br/padroes/tiss/schemas" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" targetNamespace="http://www.ans.gov.br/padroes/tiss/schemas" version="0.1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="xmldsig-core-schema.xsd" namespace="http://www.w3.org/2000/09/xmldsig#" />
+  <complexType name="Signature">
+    <complexContent mixed="false">
+      <extension base="ds:SignatureType" />
+    </complexContent>
+  </complexType>
+</schema>

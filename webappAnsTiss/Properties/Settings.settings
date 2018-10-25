@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="webappAnsTiss.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="webappAnsTiss_wsTissCancelaGuia_tissCancelaGuia" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissComunicacaoBeneficiario_tissComunicacaoBeneficiario" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissLoteAnexo_tissLoteAnexo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissLoteGuias_tissLoteGuias" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissRecursoGlosa_tissRecursoGlosa" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissSolicitacaoDemonstrativoRetorno_tissSolicitacaoDemonstrativoRetorno" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsSolicitacaoProcedimento_tissSolicitacaoProcedimento" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissSolicitacaoStatusAutorizacao_tissSolicitacaoStatusAutorizacao" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissSolicitacaoStatusProtocolo_tissSolicitacaoStatusProtocolo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissSolicitacaoStatusRecursoGlosa_tissSolicitacaoStatusProtocoloRecurso" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="webappAnsTiss_wsTissVerificaElegibilidade_tissVerificaElegibilidade" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

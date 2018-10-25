@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ans="http://www.ans.gov.br/padroes/tiss/schemas" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" targetNamespace="http://www.ans.gov.br/padroes/tiss/schemas" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="xmldsig-core-schema.xsd" namespace="http://www.w3.org/2000/09/xmldsig#" />
+  <include schemaLocation="tissSimpleTypesV3_03_03.xsd" />
+  <include schemaLocation="tissComplexTypesV3_03_03.xsd" />
+  <include schemaLocation="tissGuiasV3_03_03.xsd" />
+  <element name="mensagemTISS">
+    <complexType>
+      <sequence>
+        <element name="cabecalho" type="ans:cabecalhoTransacao" />
+        <choice>
+          <element minOccurs="0" name="operadoraParaPrestador" type="ans:operadoraPrestador" />
+          <element minOccurs="0" name="prestadorParaOperadora" type="ans:prestadorOperadora" />
+        </choice>
+        <element name="epilogo" type="ans:epilogo" />
+        <element minOccurs="0" ref="ds:Signature" />
+      </sequence>
+    </complexType>
+  </element>
+  <complexType name="cabecalhoTransacao">
+    <sequence>
+      <element name="identificacaoTransacao">
+        <complexType>
+          <sequence>
+            <element name="tipoTransacao" type="ans:dm_tipoTransacao" />
+            <element name="sequencialTransacao" type="ans:st_texto12" />
+            <element name="dataRegistroTransacao" type="ans:st_data" />
+            <element name="horaRegistroTransacao" type="ans:st_hora" />
+          </sequence>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="falhaNegocio" type="ans:dm_tipoGlosa" />
+      <element name="origem">
+        <complexType>
+          <choice>
+            <element name="identificacaoPrestador">
+              <complexType>
+                <complexContent mixed="false">
+                  <extension base="ans:ct_prestadorIdentificacao" />
+                </complexContent>
+              </complexType>
+            </element>
+            <element name="registroANS" type="ans:st_registroANS" />
+          </choice>
+        </complexType>
+      </element>
+      <element name="destino">
+        <complexType>
+          <choice>
+            <element name="identificacaoPrestador" type="ans:ct_prestadorIdentificacao" />
+            <element name="registroANS" type="ans:st_registroANS" />
+          </choice>
+        </complexType>
+      </element>
+      <element name="Padrao" type="ans:dm_versao" />
+      <element minOccurs="0" name="loginSenhaPrestador" type="ans:ct_loginSenha" />
+    </sequence>
+  </complexType>
+  <complexType name="operadoraPrestador">
+    <choice>
+      <element minOccurs="0" name="recebimentoLote" type="ans:ct_recebimentoLote" />
+      <element minOccurs="0" name="recebimentoAnexo">
+        <complexType>
+          <choice>
+            <element name="mensagemErro" type="ans:ct_motivoGlosa" />
+            <element name="protocoloRecebimentoAnexo" type="ans:ct_anexoRecebimento" />
+          </choice>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="recebimentoRecursoGlosa" type="ans:ct_recebimentoRecurso" />
+      <element minOccurs="0" name="demonstrativosRetorno" type="ans:ct_demonstrativoRetorno" />
+      <element minOccurs="0" name="situacaoProtocolo" type="ans:ct_situacaoProtocolo" />
+      <element minOccurs="0" name="autorizacaoServicos" type="ans:ct_situacaoAutorizacao" />
+      <element minOccurs="0" name="situacaoAutorizacao" type="ans:ct_situacaoAutorizacao" />
+      <element minOccurs="0" name="respostaElegibilidade">
+        <complexType>
+          <choice>
+            <element name="mensagemErro" type="ans:ct_motivoGlosa" />
+            <element name="reciboElegibilidade" type="ans:ct_elegibilidadeRecibo" />
+          </choice>
+        </complexType>
+      </element>
+      <element minOccurs="0" name="reciboCancelaGuia" type="ans:ct_reciboCancelaGuia" />
+      <element minOccurs="0" name="reciboComunicacao" type="ans:ct_reciboComunicacao" />
+      <element minOccurs="0" name="respostaRecursoGlosa" type="ans:ct_respostaGlosa" />
+    </choice>
+  </complexType>
+  <complexType name="prestadorOperadora">
+    <choice>
+      <element minOccurs="0" name="loteGuias" type="ans:ctm_guiaLote" />
+      <element minOccurs="0" name="loteAnexos" type="ans:ct_anexoLote" />
+      <element minOccurs="0" name="solicitacaoDemonstrativoRetorno" type="ans:ct_demonstrativoSolicitacao" />
+      <element minOccurs="0" name="solicitacaoStatusProtocolo" type="ans:ct_protocoloSolicitacaoStatus" />
+      <element minOccurs="0" name="solicitacaoProcedimento" type="ans:ct_solicitacaoProcedimento" />
+      <element minOccurs="0" name="solicitaStatusAutorizacao" type="ans:ct_autorizacaoSolicitaStatus" />
+      <element minOccurs="0" name="verificaElegibilidade" type="ans:ct_elegibilidadeVerifica" />
+      <element minOccurs="0" name="cancelaGuia" type="ans:ct_guiaCancelamento" />
+      <element minOccurs="0" name="comunicacaoInternacao" type="ans:ctm_beneficiarioComunicacao" />
+      <element minOccurs="0" name="recursoGlosa" type="ans:ct_guiaRecursoLote" />
+      <element minOccurs="0" name="solicitacaoStatusRecursoGlosa" type="ans:ct_protocoloSolicitacaoStatus" />
+    </choice>
+  </complexType>
+  <complexType name="epilogo">
+    <sequence>
+      <element name="hash" type="string" />
+    </sequence>
+  </complexType>
+</schema>

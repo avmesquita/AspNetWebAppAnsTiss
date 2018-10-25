@@ -1,0 +1,2418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ans="http://www.ans.gov.br/padroes/tiss/schemas" elementFormDefault="qualified" targetNamespace="http://www.ans.gov.br/padroes/tiss/schemas" xmlns="http://www.w3.org/2001/XMLSchema">
+  <simpleType name="dm_caraterAtendimento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_caraterMonitoramento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="E" />
+      <enumeration value="U" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_CBOS">
+    <restriction base="string">
+      <enumeration value="201115" />
+      <enumeration value="203015" />
+      <enumeration value="213150" />
+      <enumeration value="225105" />
+      <enumeration value="225110" />
+      <enumeration value="225148" />
+      <enumeration value="225185" />
+      <enumeration value="225115" />
+      <enumeration value="225120" />
+      <enumeration value="225210" />
+      <enumeration value="225215" />
+      <enumeration value="225220" />
+      <enumeration value="225225" />
+      <enumeration value="225230" />
+      <enumeration value="225235" />
+      <enumeration value="225240" />
+      <enumeration value="225305" />
+      <enumeration value="225350" />
+      <enumeration value="225125" />
+      <enumeration value="225130" />
+      <enumeration value="225135" />
+      <enumeration value="225140" />
+      <enumeration value="225310" />
+      <enumeration value="225145" />
+      <enumeration value="225150" />
+      <enumeration value="225315" />
+      <enumeration value="225320" />
+      <enumeration value="225155" />
+      <enumeration value="225160" />
+      <enumeration value="225245" />
+      <enumeration value="225165" />
+      <enumeration value="225170" />
+      <enumeration value="225175" />
+      <enumeration value="225180" />
+      <enumeration value="225250" />
+      <enumeration value="225190" />
+      <enumeration value="225195" />
+      <enumeration value="225103" />
+      <enumeration value="225106" />
+      <enumeration value="225255" />
+      <enumeration value="225109" />
+      <enumeration value="225260" />
+      <enumeration value="225112" />
+      <enumeration value="225118" />
+      <enumeration value="225265" />
+      <enumeration value="225121" />
+      <enumeration value="225270" />
+      <enumeration value="225275" />
+      <enumeration value="225325" />
+      <enumeration value="225124" />
+      <enumeration value="225127" />
+      <enumeration value="225280" />
+      <enumeration value="225133" />
+      <enumeration value="225330" />
+      <enumeration value="225136" />
+      <enumeration value="225139" />
+      <enumeration value="225285" />
+      <enumeration value="223204" />
+      <enumeration value="223208" />
+      <enumeration value="223212" />
+      <enumeration value="223216" />
+      <enumeration value="223220" />
+      <enumeration value="223224" />
+      <enumeration value="223228" />
+      <enumeration value="223232" />
+      <enumeration value="223236" />
+      <enumeration value="223240" />
+      <enumeration value="223244" />
+      <enumeration value="223248" />
+      <enumeration value="223252" />
+      <enumeration value="223256" />
+      <enumeration value="223260" />
+      <enumeration value="223264" />
+      <enumeration value="223268" />
+      <enumeration value="223272" />
+      <enumeration value="223505" />
+      <enumeration value="223605" />
+      <enumeration value="223910" />
+      <enumeration value="223905" />
+      <enumeration value="223710" />
+      <enumeration value="223810" />
+      <enumeration value="239425" />
+      <enumeration value="251510" />
+      <enumeration value="251545" />
+      <enumeration value="251550" />
+      <enumeration value="251605" />
+      <enumeration value="322205" />
+      <enumeration value="322220" />
+      <enumeration value="322225" />
+      <enumeration value="322230" />
+      <enumeration value="516210" />
+      <enumeration value="225121" />
+      <enumeration value="225325" />
+      <enumeration value="223276" />
+      <enumeration value="223280" />
+      <enumeration value="223284" />
+      <enumeration value="223288" />
+      <enumeration value="223293" />
+      <enumeration value="225122" />
+      <enumeration value="225142" />
+      <enumeration value="225151" />
+      <enumeration value="225203" />
+      <enumeration value="225290" />
+      <enumeration value="225295" />
+      <enumeration value="225335" />
+      <enumeration value="225340" />
+      <enumeration value="225345" />
+      <enumeration value="223625" />
+      <enumeration value="223630" />
+      <enumeration value="223635" />
+      <enumeration value="223640" />
+      <enumeration value="223645" />
+      <enumeration value="223650" />
+      <enumeration value="223655" />
+      <enumeration value="223660" />
+      <enumeration value="223435" />
+      <enumeration value="223430" />
+      <enumeration value="223415" />
+      <enumeration value="223405" />
+      <enumeration value="223420" />
+      <enumeration value="223440" />
+      <enumeration value="223445" />
+      <enumeration value="223425" />
+      <enumeration value="223565" />
+      <enumeration value="223560" />
+      <enumeration value="223555" />
+      <enumeration value="223550" />
+      <enumeration value="223545" />
+      <enumeration value="223540" />
+      <enumeration value="223535" />
+      <enumeration value="223530" />
+      <enumeration value="223525" />
+      <enumeration value="223520" />
+      <enumeration value="223515" />
+      <enumeration value="223510" />
+      <enumeration value="223570" />
+      <enumeration value="223705" />
+      <enumeration value="223845" />
+      <enumeration value="223830" />
+      <enumeration value="223825" />
+      <enumeration value="223835" />
+      <enumeration value="223840" />
+      <enumeration value="223820" />
+      <enumeration value="223815" />
+      <enumeration value="225154" />
+      <enumeration value="221105" />
+      <enumeration value="999999" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_CBOSmonitor">
+    <restriction base="string">
+      <enumeration value="201115" />
+      <enumeration value="203015" />
+      <enumeration value="213150" />
+      <enumeration value="225105" />
+      <enumeration value="225110" />
+      <enumeration value="225148" />
+      <enumeration value="225185" />
+      <enumeration value="225115" />
+      <enumeration value="225120" />
+      <enumeration value="225210" />
+      <enumeration value="225215" />
+      <enumeration value="225220" />
+      <enumeration value="225225" />
+      <enumeration value="225230" />
+      <enumeration value="225235" />
+      <enumeration value="225240" />
+      <enumeration value="225305" />
+      <enumeration value="225350" />
+      <enumeration value="225125" />
+      <enumeration value="225130" />
+      <enumeration value="225135" />
+      <enumeration value="225140" />
+      <enumeration value="225310" />
+      <enumeration value="225145" />
+      <enumeration value="225150" />
+      <enumeration value="225315" />
+      <enumeration value="225320" />
+      <enumeration value="225155" />
+      <enumeration value="225160" />
+      <enumeration value="225245" />
+      <enumeration value="225165" />
+      <enumeration value="225170" />
+      <enumeration value="225175" />
+      <enumeration value="225180" />
+      <enumeration value="225250" />
+      <enumeration value="225190" />
+      <enumeration value="225195" />
+      <enumeration value="225103" />
+      <enumeration value="225106" />
+      <enumeration value="225255" />
+      <enumeration value="225109" />
+      <enumeration value="225260" />
+      <enumeration value="225112" />
+      <enumeration value="225118" />
+      <enumeration value="225265" />
+      <enumeration value="225121" />
+      <enumeration value="225270" />
+      <enumeration value="225275" />
+      <enumeration value="225325" />
+      <enumeration value="225124" />
+      <enumeration value="225127" />
+      <enumeration value="225280" />
+      <enumeration value="225133" />
+      <enumeration value="225330" />
+      <enumeration value="225136" />
+      <enumeration value="225139" />
+      <enumeration value="225285" />
+      <enumeration value="223204" />
+      <enumeration value="223208" />
+      <enumeration value="223212" />
+      <enumeration value="223216" />
+      <enumeration value="223220" />
+      <enumeration value="223224" />
+      <enumeration value="223228" />
+      <enumeration value="223232" />
+      <enumeration value="223236" />
+      <enumeration value="223240" />
+      <enumeration value="223244" />
+      <enumeration value="223248" />
+      <enumeration value="223252" />
+      <enumeration value="223256" />
+      <enumeration value="223260" />
+      <enumeration value="223264" />
+      <enumeration value="223268" />
+      <enumeration value="223272" />
+      <enumeration value="223505" />
+      <enumeration value="223605" />
+      <enumeration value="223910" />
+      <enumeration value="223905" />
+      <enumeration value="223710" />
+      <enumeration value="223810" />
+      <enumeration value="239425" />
+      <enumeration value="251510" />
+      <enumeration value="251545" />
+      <enumeration value="251550" />
+      <enumeration value="251605" />
+      <enumeration value="322205" />
+      <enumeration value="322220" />
+      <enumeration value="322225" />
+      <enumeration value="322230" />
+      <enumeration value="516210" />
+      <enumeration value="225121" />
+      <enumeration value="225325" />
+      <enumeration value="223276" />
+      <enumeration value="223280" />
+      <enumeration value="223284" />
+      <enumeration value="223288" />
+      <enumeration value="223293" />
+      <enumeration value="225122" />
+      <enumeration value="225142" />
+      <enumeration value="225151" />
+      <enumeration value="225203" />
+      <enumeration value="225290" />
+      <enumeration value="225295" />
+      <enumeration value="225335" />
+      <enumeration value="225340" />
+      <enumeration value="225345" />
+      <enumeration value="999999" />
+      <enumeration value="131205" />
+      <enumeration value="131210" />
+      <enumeration value="131120" />
+      <enumeration value="2011" />
+      <enumeration value="201115" />
+      <enumeration value="203305" />
+      <enumeration value="203010" />
+      <enumeration value="203015" />
+      <enumeration value="203020" />
+      <enumeration value="203025" />
+      <enumeration value="213150" />
+      <enumeration value="221105" />
+      <enumeration value="2231" />
+      <enumeration value="2232" />
+      <enumeration value="223101" />
+      <enumeration value="223102" />
+      <enumeration value="223103" />
+      <enumeration value="223104" />
+      <enumeration value="223105" />
+      <enumeration value="223106" />
+      <enumeration value="223107" />
+      <enumeration value="223108" />
+      <enumeration value="223109" />
+      <enumeration value="223110" />
+      <enumeration value="223111" />
+      <enumeration value="223112" />
+      <enumeration value="223113" />
+      <enumeration value="223114" />
+      <enumeration value="223115" />
+      <enumeration value="223116" />
+      <enumeration value="223117" />
+      <enumeration value="223118" />
+      <enumeration value="223119" />
+      <enumeration value="223120" />
+      <enumeration value="223121" />
+      <enumeration value="223122" />
+      <enumeration value="223123" />
+      <enumeration value="223124" />
+      <enumeration value="223125" />
+      <enumeration value="223126" />
+      <enumeration value="223127" />
+      <enumeration value="223128" />
+      <enumeration value="223129" />
+      <enumeration value="223130" />
+      <enumeration value="223131" />
+      <enumeration value="223132" />
+      <enumeration value="223133" />
+      <enumeration value="223134" />
+      <enumeration value="223135" />
+      <enumeration value="223136" />
+      <enumeration value="223137" />
+      <enumeration value="223138" />
+      <enumeration value="223139" />
+      <enumeration value="2235" />
+      <enumeration value="223204" />
+      <enumeration value="223208" />
+      <enumeration value="223212" />
+      <enumeration value="223216" />
+      <enumeration value="223220" />
+      <enumeration value="223224" />
+      <enumeration value="223228" />
+      <enumeration value="223232" />
+      <enumeration value="223236" />
+      <enumeration value="223305" />
+      <enumeration value="223405" />
+      <enumeration value="2236" />
+      <enumeration value="223605" />
+      <enumeration value="223615" />
+      <enumeration value="223620" />
+      <enumeration value="2237" />
+      <enumeration value="223705" />
+      <enumeration value="223710" />
+      <enumeration value="2238" />
+      <enumeration value="223810" />
+      <enumeration value="223140" />
+      <enumeration value="223141" />
+      <enumeration value="223142" />
+      <enumeration value="223143" />
+      <enumeration value="223144" />
+      <enumeration value="223145" />
+      <enumeration value="223146" />
+      <enumeration value="223147" />
+      <enumeration value="223148" />
+      <enumeration value="223540" />
+      <enumeration value="223550" />
+      <enumeration value="223244" />
+      <enumeration value="223240" />
+      <enumeration value="223248" />
+      <enumeration value="223545" />
+      <enumeration value="223149" />
+      <enumeration value="223150" />
+      <enumeration value="223151" />
+      <enumeration value="223152" />
+      <enumeration value="223252" />
+      <enumeration value="223153" />
+      <enumeration value="223154" />
+      <enumeration value="223155" />
+      <enumeration value="223156" />
+      <enumeration value="223157" />
+      <enumeration value="223256" />
+      <enumeration value="223510" />
+      <enumeration value="223515" />
+      <enumeration value="223520" />
+      <enumeration value="223525" />
+      <enumeration value="223530" />
+      <enumeration value="223535" />
+      <enumeration value="223555" />
+      <enumeration value="223260" />
+      <enumeration value="223560" />
+      <enumeration value="223264" />
+      <enumeration value="223268" />
+      <enumeration value="223272" />
+      <enumeration value="22415" />
+      <enumeration value="239425" />
+      <enumeration value="2515" />
+      <enumeration value="251505" />
+      <enumeration value="251605" />
+      <enumeration value="251510" />
+      <enumeration value="252105" />
+      <enumeration value="251515" />
+      <enumeration value="251520" />
+      <enumeration value="251525" />
+      <enumeration value="251530" />
+      <enumeration value="251535" />
+      <enumeration value="251540" />
+      <enumeration value="251545" />
+      <enumeration value="251550" />
+      <enumeration value="301105" />
+      <enumeration value="313505" />
+      <enumeration value="313410" />
+      <enumeration value="3225" />
+      <enumeration value="322105" />
+      <enumeration value="322205" />
+      <enumeration value="322305" />
+      <enumeration value="322405" />
+      <enumeration value="322505" />
+      <enumeration value="322605" />
+      <enumeration value="322210" />
+      <enumeration value="322410" />
+      <enumeration value="322115" />
+      <enumeration value="322215" />
+      <enumeration value="322415" />
+      <enumeration value="322220" />
+      <enumeration value="322420" />
+      <enumeration value="324105" />
+      <enumeration value="322225" />
+      <enumeration value="324205" />
+      <enumeration value="324110" />
+      <enumeration value="3251" />
+      <enumeration value="322230" />
+      <enumeration value="324210" />
+      <enumeration value="325105" />
+      <enumeration value="324115" />
+      <enumeration value="322235" />
+      <enumeration value="325110" />
+      <enumeration value="322240" />
+      <enumeration value="325310" />
+      <enumeration value="325115" />
+      <enumeration value="3522" />
+      <enumeration value="352210" />
+      <enumeration value="411010" />
+      <enumeration value="415120" />
+      <enumeration value="422105" />
+      <enumeration value="422110" />
+      <enumeration value="422115" />
+      <enumeration value="5151" />
+      <enumeration value="5152" />
+      <enumeration value="513220" />
+      <enumeration value="515105" />
+      <enumeration value="515110" />
+      <enumeration value="515210" />
+      <enumeration value="513430" />
+      <enumeration value="515115" />
+      <enumeration value="515120" />
+      <enumeration value="516210" />
+      <enumeration value="516805" />
+      <enumeration value="516115" />
+      <enumeration value="516135" />
+      <enumeration value="519305" />
+      <enumeration value="521130" />
+      <enumeration value="623315" />
+      <enumeration value="741105" />
+      <enumeration value="766420" />
+      <enumeration value="782310" />
+      <enumeration value="915105" />
+      <enumeration value="2231F3" />
+      <enumeration value="3222B3" />
+      <enumeration value="2231F4" />
+      <enumeration value="2231F5" />
+      <enumeration value="2231F6" />
+      <enumeration value="2231F7" />
+      <enumeration value="2231F8" />
+      <enumeration value="223625" />
+      <enumeration value="223630" />
+      <enumeration value="223635" />
+      <enumeration value="223640" />
+      <enumeration value="223645" />
+      <enumeration value="223650" />
+      <enumeration value="223655" />
+      <enumeration value="223660" />
+      <enumeration value="223435" />
+      <enumeration value="223430" />
+      <enumeration value="223415" />
+      <enumeration value="223405" />
+      <enumeration value="223420" />
+      <enumeration value="223440" />
+      <enumeration value="223445" />
+      <enumeration value="223425" />
+      <enumeration value="223565" />
+      <enumeration value="223560" />
+      <enumeration value="223555" />
+      <enumeration value="223550" />
+      <enumeration value="223545" />
+      <enumeration value="223540" />
+      <enumeration value="223535" />
+      <enumeration value="223530" />
+      <enumeration value="223525" />
+      <enumeration value="223520" />
+      <enumeration value="223515" />
+      <enumeration value="223510" />
+      <enumeration value="223570" />
+      <enumeration value="223705" />
+      <enumeration value="223845" />
+      <enumeration value="223830" />
+      <enumeration value="223825" />
+      <enumeration value="223835" />
+      <enumeration value="223840" />
+      <enumeration value="223820" />
+      <enumeration value="223815" />
+      <enumeration value="225154" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_condicaoClinica">
+    <restriction base="string">
+      <maxLength value="1" />
+      <enumeration value="A" />
+      <enumeration value="E" />
+      <enumeration value="H" />
+      <enumeration value="C" />
+      <enumeration value="R" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_conselhoProfissional">
+    <restriction base="string">
+      <maxLength value="2" />
+      <enumeration value="01" />
+      <enumeration value="02" />
+      <enumeration value="03" />
+      <enumeration value="04" />
+      <enumeration value="05" />
+      <enumeration value="06" />
+      <enumeration value="07" />
+      <enumeration value="08" />
+      <enumeration value="09" />
+      <enumeration value="10" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_dente">
+    <restriction base="string">
+      <maxLength value="2" />
+      <enumeration value="11" />
+      <enumeration value="12" />
+      <enumeration value="13" />
+      <enumeration value="14" />
+      <enumeration value="15" />
+      <enumeration value="16" />
+      <enumeration value="17" />
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="21" />
+      <enumeration value="22" />
+      <enumeration value="23" />
+      <enumeration value="24" />
+      <enumeration value="25" />
+      <enumeration value="26" />
+      <enumeration value="27" />
+      <enumeration value="28" />
+      <enumeration value="29" />
+      <enumeration value="31" />
+      <enumeration value="32" />
+      <enumeration value="33" />
+      <enumeration value="34" />
+      <enumeration value="35" />
+      <enumeration value="36" />
+      <enumeration value="37" />
+      <enumeration value="38" />
+      <enumeration value="39" />
+      <enumeration value="41" />
+      <enumeration value="42" />
+      <enumeration value="43" />
+      <enumeration value="44" />
+      <enumeration value="45" />
+      <enumeration value="46" />
+      <enumeration value="47" />
+      <enumeration value="48" />
+      <enumeration value="49" />
+      <enumeration value="51" />
+      <enumeration value="52" />
+      <enumeration value="53" />
+      <enumeration value="54" />
+      <enumeration value="55" />
+      <enumeration value="59" />
+      <enumeration value="61" />
+      <enumeration value="62" />
+      <enumeration value="63" />
+      <enumeration value="64" />
+      <enumeration value="65" />
+      <enumeration value="69" />
+      <enumeration value="71" />
+      <enumeration value="72" />
+      <enumeration value="73" />
+      <enumeration value="74" />
+      <enumeration value="75" />
+      <enumeration value="79" />
+      <enumeration value="81" />
+      <enumeration value="82" />
+      <enumeration value="83" />
+      <enumeration value="84" />
+      <enumeration value="85" />
+      <enumeration value="89" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_debitoCreditoIndicador">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_debitoCreditoTipo">
+    <restriction base="string">
+      <maxLength value="2" />
+      <enumeration value="01" />
+      <enumeration value="02" />
+      <enumeration value="03" />
+      <enumeration value="04" />
+      <enumeration value="05" />
+      <enumeration value="06" />
+      <enumeration value="07" />
+      <enumeration value="08" />
+      <enumeration value="09" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_diagnosticoImagem">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+      <enumeration value="6" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_ecog">
+    <restriction base="string">
+      <enumeration value="0" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_estadiamento">
+    <restriction base="string">
+      <enumeration value="0" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_face">
+    <restriction base="string">
+      <pattern value="[OLMVDIP]{1,5}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_finalidadeTratamento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_formaEnvio">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_formaPagamento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_grauPart">
+    <restriction base="string">
+      <maxLength value="2" />
+      <enumeration value="00" />
+      <enumeration value="01" />
+      <enumeration value="02" />
+      <enumeration value="03" />
+      <enumeration value="04" />
+      <enumeration value="05" />
+      <enumeration value="06" />
+      <enumeration value="07" />
+      <enumeration value="08" />
+      <enumeration value="09" />
+      <enumeration value="10" />
+      <enumeration value="11" />
+      <enumeration value="12" />
+      <enumeration value="13" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_indicadorAcidente">
+    <restriction base="string">
+      <enumeration value="0" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="9" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_indicadorIdentificacao">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_metastase">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="8" />
+      <enumeration value="9" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_motivoSaida">
+    <restriction base="string">
+      <enumeration value="11" />
+      <enumeration value="12" />
+      <enumeration value="14" />
+      <enumeration value="15" />
+      <enumeration value="16" />
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="21" />
+      <enumeration value="22" />
+      <enumeration value="23" />
+      <enumeration value="24" />
+      <enumeration value="25" />
+      <enumeration value="26" />
+      <enumeration value="27" />
+      <enumeration value="28" />
+      <enumeration value="31" />
+      <enumeration value="32" />
+      <enumeration value="41" />
+      <enumeration value="42" />
+      <enumeration value="43" />
+      <enumeration value="51" />
+      <enumeration value="61" />
+      <enumeration value="62" />
+      <enumeration value="63" />
+      <enumeration value="64" />
+      <enumeration value="65" />
+      <enumeration value="66" />
+      <enumeration value="67" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_motivoSaidaObito">
+    <restriction base="string">
+      <enumeration value="41" />
+      <enumeration value="42" />
+      <enumeration value="43" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_nodulo">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+      <enumeration value="8" />
+      <enumeration value="9" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_opcaoFabricante">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_objetoRecurso">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_outrasDespesas">
+    <restriction base="string">
+      <enumeration value="01" />
+      <enumeration value="02" />
+      <enumeration value="03" />
+      <enumeration value="05" />
+      <enumeration value="07" />
+      <enumeration value="08" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_posicaoProfissao">
+    <restriction base="string">
+      <enumeration value="00" />
+      <enumeration value="01" />
+      <enumeration value="02" />
+      <enumeration value="03" />
+      <enumeration value="04" />
+      <enumeration value="05" />
+      <enumeration value="06" />
+      <enumeration value="07" />
+      <enumeration value="08" />
+      <enumeration value="09" />
+      <enumeration value="10" />
+      <enumeration value="11" />
+      <enumeration value="12" />
+      <enumeration value="13" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_regiao">
+    <restriction base="string">
+      <maxLength value="4" />
+      <enumeration value="AI" />
+      <enumeration value="AS" />
+      <enumeration value="HASD" />
+      <enumeration value="HASE" />
+      <enumeration value="HAID" />
+      <enumeration value="HAIE" />
+      <enumeration value="ASAI" />
+      <enumeration value="S1" />
+      <enumeration value="S2" />
+      <enumeration value="S3" />
+      <enumeration value="S4" />
+      <enumeration value="S5" />
+      <enumeration value="S6" />
+      <enumeration value="LG" />
+      <enumeration value="CL" />
+      <enumeration value="AB" />
+      <enumeration value="PA" />
+      <enumeration value="MJ" />
+      <enumeration value="PD" />
+      <enumeration value="PM" />
+      <enumeration value="RM" />
+      <enumeration value="MA" />
+      <enumeration value="GI" />
+      <enumeration value="PT" />
+      <enumeration value="TP" />
+      <enumeration value="RIS" />
+      <enumeration value="RCSD" />
+      <enumeration value="RPSD" />
+      <enumeration value="RCID" />
+      <enumeration value="RMSD" />
+      <enumeration value="RCSE" />
+      <enumeration value="RPSE" />
+      <enumeration value="RMSE" />
+      <enumeration value="RII" />
+      <enumeration value="RPID" />
+      <enumeration value="RMID" />
+      <enumeration value="RCIE" />
+      <enumeration value="RPIE" />
+      <enumeration value="RMIE" />
+      <enumeration value="RMD" />
+      <enumeration value="RME" />
+      <enumeration value="RPD" />
+      <enumeration value="RPE" />
+      <enumeration value="RMPE" />
+      <enumeration value="RMPD" />
+      <enumeration value="SM" />
+      <enumeration value="TU" />
+      <enumeration value="SI" />
+      <enumeration value="FLI" />
+      <enumeration value="FLA" />
+      <enumeration value="UV" />
+      <enumeration value="PP" />
+      <enumeration value="PI" />
+      <enumeration value="LS" />
+      <enumeration value="LI" />
+      <enumeration value="RL" />
+      <enumeration value="RP" />
+      <enumeration value="RV" />
+      <enumeration value="RSMD" />
+      <enumeration value="RSME" />
+      <enumeration value="RSL" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_regimeInternacao">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_sexo">
+    <restriction base="string">
+      <maxLength value="1" />
+      <enumeration value="1" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_simNao">
+    <restriction base="string">
+      <enumeration value="S" />
+      <enumeration value="N" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_statusCancelamento">
+    <restriction base="string">
+      <maxLength value="1" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_statusComunicacaoBeneficiario">
+    <restriction base="string">
+      <enumeration value="P" />
+      <enumeration value="B" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_statusProtocolo">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+      <enumeration value="6" />
+      <enumeration value="7" />
+      <enumeration value="8" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_statusSolicitacao">
+    <restriction base="string">
+      <length value="1" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+      <enumeration value="6" />
+      <enumeration value="7" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_statusTransacaoMonitor">
+    <restriction base="string">
+      <length value="1" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tabelaMonitor">
+    <restriction base="string">
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="20" />
+      <enumeration value="22" />
+      <enumeration value="63" />
+      <enumeration value="90" />
+      <enumeration value="98" />
+      <enumeration value="00" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tabela">
+    <restriction base="string">
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="20" />
+      <enumeration value="22" />
+      <enumeration value="90" />
+      <enumeration value="98" />
+      <enumeration value="00" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tabelaPacote">
+    <restriction base="string">
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="20" />
+      <enumeration value="22" />
+      <enumeration value="00" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tabelaGeral">
+    <restriction base="string">
+      <enumeration value="05" />
+      <enumeration value="12" />
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="20" />
+      <enumeration value="22" />
+      <enumeration value="23" />
+      <enumeration value="24" />
+      <enumeration value="25" />
+      <enumeration value="26" />
+      <enumeration value="27" />
+      <enumeration value="28" />
+      <enumeration value="29" />
+      <enumeration value="30" />
+      <enumeration value="31" />
+      <enumeration value="32" />
+      <enumeration value="33" />
+      <enumeration value="34" />
+      <enumeration value="35" />
+      <enumeration value="36" />
+      <enumeration value="37" />
+      <enumeration value="38" />
+      <enumeration value="39" />
+      <enumeration value="40" />
+      <enumeration value="41" />
+      <enumeration value="42" />
+      <enumeration value="43" />
+      <enumeration value="44" />
+      <enumeration value="45" />
+      <enumeration value="46" />
+      <enumeration value="47" />
+      <enumeration value="48" />
+      <enumeration value="49" />
+      <enumeration value="50" />
+      <enumeration value="51" />
+      <enumeration value="52" />
+      <enumeration value="53" />
+      <enumeration value="54" />
+      <enumeration value="55" />
+      <enumeration value="56" />
+      <enumeration value="57" />
+      <enumeration value="58" />
+      <enumeration value="59" />
+      <enumeration value="60" />
+      <enumeration value="61" />
+      <enumeration value="90" />
+      <enumeration value="98" />
+      <enumeration value="00" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tabelasDiagnostico">
+    <restriction base="string">
+      <enumeration value="CID-10" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tecnicaUtilizada">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoAcomodacao">
+    <restriction base="string">
+      <enumeration value="02" />
+      <enumeration value="09" />
+      <enumeration value="10" />
+      <enumeration value="11" />
+      <enumeration value="12" />
+      <enumeration value="13" />
+      <enumeration value="14" />
+      <enumeration value="15" />
+      <enumeration value="16" />
+      <enumeration value="17" />
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="20" />
+      <enumeration value="21" />
+      <enumeration value="22" />
+      <enumeration value="25" />
+      <enumeration value="26" />
+      <enumeration value="27" />
+      <enumeration value="28" />
+      <enumeration value="29" />
+      <enumeration value="30" />
+      <enumeration value="31" />
+      <enumeration value="32" />
+      <enumeration value="33" />
+      <enumeration value="36" />
+      <enumeration value="37" />
+      <enumeration value="38" />
+      <enumeration value="39" />
+      <enumeration value="40" />
+      <enumeration value="41" />
+      <enumeration value="43" />
+      <enumeration value="44" />
+      <enumeration value="45" />
+      <enumeration value="46" />
+      <enumeration value="47" />
+      <enumeration value="48" />
+      <enumeration value="49" />
+      <enumeration value="50" />
+      <enumeration value="51" />
+      <enumeration value="52" />
+      <enumeration value="53" />
+      <enumeration value="56" />
+      <enumeration value="57" />
+      <enumeration value="58" />
+      <enumeration value="59" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoAtendimento">
+    <restriction base="string">
+      <enumeration value="01" />
+      <enumeration value="02" />
+      <enumeration value="03" />
+      <enumeration value="04" />
+      <enumeration value="05" />
+      <enumeration value="06" />
+      <enumeration value="07" />
+      <enumeration value="08" />
+      <enumeration value="09" />
+      <enumeration value="10" />
+      <enumeration value="11" />
+      <enumeration value="13" />
+      <enumeration value="14" />
+      <enumeration value="15" />
+      <enumeration value="16" />
+      <enumeration value="17" />
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="20" />
+      <enumeration value="21" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoAtendimentoIntermediario">
+    <restriction base="string">
+      <maxLength value="1" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoAtendimentoOdonto">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoConsulta">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoDemonstrativo">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoDemonstrativoPagamento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoEvento">
+    <restriction base="string">
+      <enumeration value="I" />
+      <enumeration value="A" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoEventoMonitoramento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_origemEventoAtencaoSaude">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoFaturamento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoFaturamentoMonitoramento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="F" />
+      <enumeration value="T" />
+      <enumeration value="P" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoFaturamentoOdonto">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoGuia">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoGlosa">
+    <restriction base="string">
+      <maxLength value="4" />
+      <enumeration value="1001" />
+      <enumeration value="1002" />
+      <enumeration value="1003" />
+      <enumeration value="1004" />
+      <enumeration value="1005" />
+      <enumeration value="1006" />
+      <enumeration value="1007" />
+      <enumeration value="1008" />
+      <enumeration value="1009" />
+      <enumeration value="1010" />
+      <enumeration value="1011" />
+      <enumeration value="1012" />
+      <enumeration value="1013" />
+      <enumeration value="1014" />
+      <enumeration value="1015" />
+      <enumeration value="1016" />
+      <enumeration value="1017" />
+      <enumeration value="1018" />
+      <enumeration value="1019" />
+      <enumeration value="1020" />
+      <enumeration value="1021" />
+      <enumeration value="1022" />
+      <enumeration value="1023" />
+      <enumeration value="1024" />
+      <enumeration value="1025" />
+      <enumeration value="1101" />
+      <enumeration value="1102" />
+      <enumeration value="1103" />
+      <enumeration value="1104" />
+      <enumeration value="1201" />
+      <enumeration value="1202" />
+      <enumeration value="1203" />
+      <enumeration value="1204" />
+      <enumeration value="1205" />
+      <enumeration value="1206" />
+      <enumeration value="1207" />
+      <enumeration value="1208" />
+      <enumeration value="1209" />
+      <enumeration value="1210" />
+      <enumeration value="1211" />
+      <enumeration value="1212" />
+      <enumeration value="1213" />
+      <enumeration value="1214" />
+      <enumeration value="1215" />
+      <enumeration value="1216" />
+      <enumeration value="1217" />
+      <enumeration value="1218" />
+      <enumeration value="1301" />
+      <enumeration value="1302" />
+      <enumeration value="1303" />
+      <enumeration value="1304" />
+      <enumeration value="1305" />
+      <enumeration value="1306" />
+      <enumeration value="1307" />
+      <enumeration value="1308" />
+      <enumeration value="1309" />
+      <enumeration value="1310" />
+      <enumeration value="1311" />
+      <enumeration value="1312" />
+      <enumeration value="1313" />
+      <enumeration value="1314" />
+      <enumeration value="1315" />
+      <enumeration value="1316" />
+      <enumeration value="1317" />
+      <enumeration value="1318" />
+      <enumeration value="1319" />
+      <enumeration value="1320" />
+      <enumeration value="1321" />
+      <enumeration value="1322" />
+      <enumeration value="1323" />
+      <enumeration value="1401" />
+      <enumeration value="1402" />
+      <enumeration value="1403" />
+      <enumeration value="1404" />
+      <enumeration value="1405" />
+      <enumeration value="1406" />
+      <enumeration value="1407" />
+      <enumeration value="1408" />
+      <enumeration value="1409" />
+      <enumeration value="1410" />
+      <enumeration value="1411" />
+      <enumeration value="1412" />
+      <enumeration value="1413" />
+      <enumeration value="1414" />
+      <enumeration value="1415" />
+      <enumeration value="1416" />
+      <enumeration value="1417" />
+      <enumeration value="1418" />
+      <enumeration value="1419" />
+      <enumeration value="1420" />
+      <enumeration value="1421" />
+      <enumeration value="1422" />
+      <enumeration value="1423" />
+      <enumeration value="1424" />
+      <enumeration value="1425" />
+      <enumeration value="1426" />
+      <enumeration value="1427" />
+      <enumeration value="1428" />
+      <enumeration value="1429" />
+      <enumeration value="1430" />
+      <enumeration value="1431" />
+      <enumeration value="1432" />
+      <enumeration value="1433" />
+      <enumeration value="1434" />
+      <enumeration value="1435" />
+      <enumeration value="1436" />
+      <enumeration value="1437" />
+      <enumeration value="1438" />
+      <enumeration value="1501" />
+      <enumeration value="1502" />
+      <enumeration value="1503" />
+      <enumeration value="1504" />
+      <enumeration value="1505" />
+      <enumeration value="1506" />
+      <enumeration value="1507" />
+      <enumeration value="1508" />
+      <enumeration value="1509" />
+      <enumeration value="1601" />
+      <enumeration value="1602" />
+      <enumeration value="1603" />
+      <enumeration value="1604" />
+      <enumeration value="1605" />
+      <enumeration value="1606" />
+      <enumeration value="1607" />
+      <enumeration value="1608" />
+      <enumeration value="1609" />
+      <enumeration value="1610" />
+      <enumeration value="1611" />
+      <enumeration value="1612" />
+      <enumeration value="1613" />
+      <enumeration value="1614" />
+      <enumeration value="1615" />
+      <enumeration value="1701" />
+      <enumeration value="1702" />
+      <enumeration value="1703" />
+      <enumeration value="1704" />
+      <enumeration value="1705" />
+      <enumeration value="1706" />
+      <enumeration value="1707" />
+      <enumeration value="1708" />
+      <enumeration value="1709" />
+      <enumeration value="1710" />
+      <enumeration value="1711" />
+      <enumeration value="1712" />
+      <enumeration value="1713" />
+      <enumeration value="1714" />
+      <enumeration value="1715" />
+      <enumeration value="1716" />
+      <enumeration value="1717" />
+      <enumeration value="1718" />
+      <enumeration value="1719" />
+      <enumeration value="1720" />
+      <enumeration value="1721" />
+      <enumeration value="1722" />
+      <enumeration value="1723" />
+      <enumeration value="1724" />
+      <enumeration value="1725" />
+      <enumeration value="1726" />
+      <enumeration value="1727" />
+      <enumeration value="1728" />
+      <enumeration value="1729" />
+      <enumeration value="1730" />
+      <enumeration value="1731" />
+      <enumeration value="1732" />
+      <enumeration value="1733" />
+      <enumeration value="1734" />
+      <enumeration value="1735" />
+      <enumeration value="1736" />
+      <enumeration value="1737" />
+      <enumeration value="1738" />
+      <enumeration value="1739" />
+      <enumeration value="1740" />
+      <enumeration value="1741" />
+      <enumeration value="1742" />
+      <enumeration value="1743" />
+      <enumeration value="1744" />
+      <enumeration value="1745" />
+      <enumeration value="1746" />
+      <enumeration value="1747" />
+      <enumeration value="1748" />
+      <enumeration value="1749" />
+      <enumeration value="1801" />
+      <enumeration value="1802" />
+      <enumeration value="1803" />
+      <enumeration value="1804" />
+      <enumeration value="1805" />
+      <enumeration value="1806" />
+      <enumeration value="1807" />
+      <enumeration value="1808" />
+      <enumeration value="1809" />
+      <enumeration value="1810" />
+      <enumeration value="1811" />
+      <enumeration value="1812" />
+      <enumeration value="1813" />
+      <enumeration value="1814" />
+      <enumeration value="1815" />
+      <enumeration value="1816" />
+      <enumeration value="1817" />
+      <enumeration value="1818" />
+      <enumeration value="1819" />
+      <enumeration value="1820" />
+      <enumeration value="1821" />
+      <enumeration value="1822" />
+      <enumeration value="1823" />
+      <enumeration value="1824" />
+      <enumeration value="1825" />
+      <enumeration value="1826" />
+      <enumeration value="1827" />
+      <enumeration value="1828" />
+      <enumeration value="1829" />
+      <enumeration value="1830" />
+      <enumeration value="1831" />
+      <enumeration value="1832" />
+      <enumeration value="1833" />
+      <enumeration value="1834" />
+      <enumeration value="1835" />
+      <enumeration value="1836" />
+      <enumeration value="1837" />
+      <enumeration value="1838" />
+      <enumeration value="1839" />
+      <enumeration value="1840" />
+      <enumeration value="1901" />
+      <enumeration value="1902" />
+      <enumeration value="1903" />
+      <enumeration value="1904" />
+      <enumeration value="1905" />
+      <enumeration value="1906" />
+      <enumeration value="1907" />
+      <enumeration value="1908" />
+      <enumeration value="1909" />
+      <enumeration value="1910" />
+      <enumeration value="1911" />
+      <enumeration value="1912" />
+      <enumeration value="1913" />
+      <enumeration value="1914" />
+      <enumeration value="1915" />
+      <enumeration value="1916" />
+      <enumeration value="1917" />
+      <enumeration value="1918" />
+      <enumeration value="2001" />
+      <enumeration value="2002" />
+      <enumeration value="2003" />
+      <enumeration value="2004" />
+      <enumeration value="2005" />
+      <enumeration value="2006" />
+      <enumeration value="2007" />
+      <enumeration value="2008" />
+      <enumeration value="2009" />
+      <enumeration value="2010" />
+      <enumeration value="2011" />
+      <enumeration value="2012" />
+      <enumeration value="2013" />
+      <enumeration value="2014" />
+      <enumeration value="2015" />
+      <enumeration value="2101" />
+      <enumeration value="2102" />
+      <enumeration value="2103" />
+      <enumeration value="2104" />
+      <enumeration value="2105" />
+      <enumeration value="2106" />
+      <enumeration value="2107" />
+      <enumeration value="2108" />
+      <enumeration value="2109" />
+      <enumeration value="2110" />
+      <enumeration value="2111" />
+      <enumeration value="2112" />
+      <enumeration value="2113" />
+      <enumeration value="2114" />
+      <enumeration value="2115" />
+      <enumeration value="2201" />
+      <enumeration value="2202" />
+      <enumeration value="2203" />
+      <enumeration value="2204" />
+      <enumeration value="2205" />
+      <enumeration value="2206" />
+      <enumeration value="2207" />
+      <enumeration value="2208" />
+      <enumeration value="2209" />
+      <enumeration value="2210" />
+      <enumeration value="2211" />
+      <enumeration value="2212" />
+      <enumeration value="2213" />
+      <enumeration value="2301" />
+      <enumeration value="2302" />
+      <enumeration value="2303" />
+      <enumeration value="2304" />
+      <enumeration value="2305" />
+      <enumeration value="2306" />
+      <enumeration value="2307" />
+      <enumeration value="2308" />
+      <enumeration value="2309" />
+      <enumeration value="2310" />
+      <enumeration value="2401" />
+      <enumeration value="2402" />
+      <enumeration value="2403" />
+      <enumeration value="2404" />
+      <enumeration value="2405" />
+      <enumeration value="2406" />
+      <enumeration value="2407" />
+      <enumeration value="2408" />
+      <enumeration value="2409" />
+      <enumeration value="2410" />
+      <enumeration value="2411" />
+      <enumeration value="2412" />
+      <enumeration value="2413" />
+      <enumeration value="2414" />
+      <enumeration value="2415" />
+      <enumeration value="2416" />
+      <enumeration value="2417" />
+      <enumeration value="2418" />
+      <enumeration value="2419" />
+      <enumeration value="2420" />
+      <enumeration value="2421" />
+      <enumeration value="2422" />
+      <enumeration value="2423" />
+      <enumeration value="2424" />
+      <enumeration value="2501" />
+      <enumeration value="2502" />
+      <enumeration value="2503" />
+      <enumeration value="2504" />
+      <enumeration value="2505" />
+      <enumeration value="2506" />
+      <enumeration value="2507" />
+      <enumeration value="2508" />
+      <enumeration value="2509" />
+      <enumeration value="2510" />
+      <enumeration value="2511" />
+      <enumeration value="2512" />
+      <enumeration value="2513" />
+      <enumeration value="2514" />
+      <enumeration value="2515" />
+      <enumeration value="2516" />
+      <enumeration value="2601" />
+      <enumeration value="2602" />
+      <enumeration value="2603" />
+      <enumeration value="2604" />
+      <enumeration value="2605" />
+      <enumeration value="2606" />
+      <enumeration value="2607" />
+      <enumeration value="2608" />
+      <enumeration value="2609" />
+      <enumeration value="2610" />
+      <enumeration value="2611" />
+      <enumeration value="2612" />
+      <enumeration value="2613" />
+      <enumeration value="2614" />
+      <enumeration value="2701" />
+      <enumeration value="2702" />
+      <enumeration value="2703" />
+      <enumeration value="2704" />
+      <enumeration value="2705" />
+      <enumeration value="2706" />
+      <enumeration value="2707" />
+      <enumeration value="2708" />
+      <enumeration value="2709" />
+      <enumeration value="2710" />
+      <enumeration value="2711" />
+      <enumeration value="2712" />
+      <enumeration value="2713" />
+      <enumeration value="2714" />
+      <enumeration value="2715" />
+      <enumeration value="2716" />
+      <enumeration value="2717" />
+      <enumeration value="2718" />
+      <enumeration value="2801" />
+      <enumeration value="2802" />
+      <enumeration value="2803" />
+      <enumeration value="2804" />
+      <enumeration value="2805" />
+      <enumeration value="2806" />
+      <enumeration value="2807" />
+      <enumeration value="2808" />
+      <enumeration value="2809" />
+      <enumeration value="2810" />
+      <enumeration value="2811" />
+      <enumeration value="2812" />
+      <enumeration value="2813" />
+      <enumeration value="2814" />
+      <enumeration value="2815" />
+      <enumeration value="2816" />
+      <enumeration value="2817" />
+      <enumeration value="2818" />
+      <enumeration value="2819" />
+      <enumeration value="2820" />
+      <enumeration value="2821" />
+      <enumeration value="2822" />
+      <enumeration value="2901" />
+      <enumeration value="2902" />
+      <enumeration value="2903" />
+      <enumeration value="2904" />
+      <enumeration value="2905" />
+      <enumeration value="2906" />
+      <enumeration value="2907" />
+      <enumeration value="2908" />
+      <enumeration value="2909" />
+      <enumeration value="3001" />
+      <enumeration value="3002" />
+      <enumeration value="3003" />
+      <enumeration value="3004" />
+      <enumeration value="3005" />
+      <enumeration value="3006" />
+      <enumeration value="3007" />
+      <enumeration value="3008" />
+      <enumeration value="3009" />
+      <enumeration value="3010" />
+      <enumeration value="3011" />
+      <enumeration value="3012" />
+      <enumeration value="3013" />
+      <enumeration value="3014" />
+      <enumeration value="3015" />
+      <enumeration value="3016" />
+      <enumeration value="3017" />
+      <enumeration value="3018" />
+      <enumeration value="3019" />
+      <enumeration value="3020" />
+      <enumeration value="3021" />
+      <enumeration value="3022" />
+      <enumeration value="3023" />
+      <enumeration value="3024" />
+      <enumeration value="3025" />
+      <enumeration value="3026" />
+      <enumeration value="3027" />
+      <enumeration value="3028" />
+      <enumeration value="3029" />
+      <enumeration value="3030" />
+      <enumeration value="3031" />
+      <enumeration value="3032" />
+      <enumeration value="3033" />
+      <enumeration value="3034" />
+      <enumeration value="3035" />
+      <enumeration value="3036" />
+      <enumeration value="3037" />
+      <enumeration value="3038" />
+      <enumeration value="3039" />
+      <enumeration value="3040" />
+      <enumeration value="3041" />
+      <enumeration value="3042" />
+      <enumeration value="3043" />
+      <enumeration value="3044" />
+      <enumeration value="3045" />
+      <enumeration value="3046" />
+      <enumeration value="3047" />
+      <enumeration value="3048" />
+      <enumeration value="3049" />
+      <enumeration value="3050" />
+      <enumeration value="3051" />
+      <enumeration value="3052" />
+      <enumeration value="3053" />
+      <enumeration value="3054" />
+      <enumeration value="3055" />
+      <enumeration value="3056" />
+      <enumeration value="3057" />
+      <enumeration value="3058" />
+      <enumeration value="3059" />
+      <enumeration value="3060" />
+      <enumeration value="3061" />
+      <enumeration value="3062" />
+      <enumeration value="3063" />
+      <enumeration value="3064" />
+      <enumeration value="3065" />
+      <enumeration value="3066" />
+      <enumeration value="3067" />
+      <enumeration value="3068" />
+      <enumeration value="3069" />
+      <enumeration value="3070" />
+      <enumeration value="3071" />
+      <enumeration value="3072" />
+      <enumeration value="3073" />
+      <enumeration value="3074" />
+      <enumeration value="3075" />
+      <enumeration value="3076" />
+      <enumeration value="3077" />
+      <enumeration value="3078" />
+      <enumeration value="3079" />
+      <enumeration value="3080" />
+      <enumeration value="3081" />
+      <enumeration value="3082" />
+      <enumeration value="3083" />
+      <enumeration value="3084" />
+      <enumeration value="3085" />
+      <enumeration value="3086" />
+      <enumeration value="3087" />
+      <enumeration value="3088" />
+      <enumeration value="3089" />
+      <enumeration value="3090" />
+      <enumeration value="3091" />
+      <enumeration value="3092" />
+      <enumeration value="3093" />
+      <enumeration value="3094" />
+      <enumeration value="3095" />
+      <enumeration value="3096" />
+      <enumeration value="3097" />
+      <enumeration value="3098" />
+      <enumeration value="3100" />
+      <enumeration value="3101" />
+      <enumeration value="3102" />
+      <enumeration value="3103" />
+      <enumeration value="3104" />
+      <enumeration value="3105" />
+      <enumeration value="3106" />
+      <enumeration value="3107" />
+      <enumeration value="3108" />
+      <enumeration value="3109" />
+      <enumeration value="3110" />
+      <enumeration value="3111" />
+      <enumeration value="3112" />
+      <enumeration value="3113" />
+      <enumeration value="3114" />
+      <enumeration value="3115" />
+      <enumeration value="3116" />
+      <enumeration value="3117" />
+      <enumeration value="3118" />
+      <enumeration value="3119" />
+      <enumeration value="3120" />
+      <enumeration value="3121" />
+      <enumeration value="3122" />
+      <enumeration value="3123" />
+      <enumeration value="3124" />
+      <enumeration value="3125" />
+      <enumeration value="3126" />
+      <enumeration value="3127" />
+      <enumeration value="3128" />
+      <enumeration value="3129" />
+      <enumeration value="3130" />
+      <enumeration value="3131" />
+      <enumeration value="3132" />
+      <enumeration value="3133" />
+      <enumeration value="3134" />
+      <enumeration value="3135" />
+      <enumeration value="3136" />
+      <enumeration value="3137" />
+      <enumeration value="3138" />
+      <enumeration value="3139" />
+      <enumeration value="3140" />
+      <enumeration value="3141" />
+      <enumeration value="3142" />
+      <enumeration value="3143" />
+      <enumeration value="3144" />
+      <enumeration value="3145" />
+      <enumeration value="3146" />
+      <enumeration value="3147" />
+      <enumeration value="3148" />
+      <enumeration value="3149" />
+      <enumeration value="3150" />
+      <enumeration value="3151" />
+      <enumeration value="3152" />
+      <enumeration value="3153" />
+      <enumeration value="3154" />
+      <enumeration value="3155" />
+      <enumeration value="5001" />
+      <enumeration value="5002" />
+      <enumeration value="5003" />
+      <enumeration value="5004" />
+      <enumeration value="5005" />
+      <enumeration value="5006" />
+      <enumeration value="5007" />
+      <enumeration value="5008" />
+      <enumeration value="5009" />
+      <enumeration value="5010" />
+      <enumeration value="5011" />
+      <enumeration value="5012" />
+      <enumeration value="5013" />
+      <enumeration value="5014" />
+      <enumeration value="5015" />
+      <enumeration value="5016" />
+      <enumeration value="5017" />
+      <enumeration value="5018" />
+      <enumeration value="5019" />
+      <enumeration value="5020" />
+      <enumeration value="5021" />
+      <enumeration value="5022" />
+      <enumeration value="5023" />
+      <enumeration value="5024" />
+      <enumeration value="5025" />
+      <enumeration value="5026" />
+      <enumeration value="5027" />
+      <enumeration value="5028" />
+      <enumeration value="5029" />
+      <enumeration value="5030" />
+      <enumeration value="5031" />
+      <enumeration value="5032" />
+      <enumeration value="5033" />
+      <enumeration value="5034" />
+      <enumeration value="5035" />
+      <enumeration value="5036" />
+      <enumeration value="5037" />
+      <enumeration value="5038" />
+      <enumeration value="5039" />
+      <enumeration value="5040" />
+      <enumeration value="5041" />
+      <enumeration value="5042" />
+      <enumeration value="5043" />
+      <enumeration value="5044" />
+      <enumeration value="5045" />
+      <enumeration value="5046" />
+      <enumeration value="5047" />
+      <enumeration value="5048" />
+      <enumeration value="5049" />
+      <enumeration value="5050" />
+      <enumeration value="5051" />
+      <enumeration value="5052" />
+      <enumeration value="5053" />
+      <enumeration value="5054" />
+      <enumeration value="5055" />
+      <enumeration value="5056" />
+      <enumeration value="5057" />
+      <enumeration value="5058" />
+      <enumeration value="5059" />
+      <enumeration value="5060" />
+      <enumeration value="5061" />
+      <enumeration value="5062" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_semMovimentoInclusao">
+    <restriction base="string">
+      <maxLength value="4" />
+      <enumeration value="5016" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoInternacao">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoInternacaoMonitoramento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+      <enumeration value="6" />
+      <enumeration value="7" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoLancamento">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoQuimioterapia">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoTransacaoANS">
+    <restriction base="string">
+      <enumeration value="MONITORAMENTO" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoTransacaoQualidade">
+    <restriction base="string">
+      <enumeration value="QUALIDADE" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tipoTransacao">
+    <restriction base="string">
+      <enumeration value="ENVIO_LOTE_GUIAS" />
+      <enumeration value="ENVIO_ANEXO" />
+      <enumeration value="SOLIC_DEMONSTRATIVO_RETORNO" />
+      <enumeration value="SOLIC_STATUS_PROTOCOLO" />
+      <enumeration value="SOLICITACAO_PROCEDIMENTOS" />
+      <enumeration value="SOLICITA_STATUS_AUTORIZACAO" />
+      <enumeration value="VERIFICA_ELEGIBILIDADE" />
+      <enumeration value="CANCELA_GUIA" />
+      <enumeration value="COMUNICACAO_BENEFICIARIO" />
+      <enumeration value="RECURSO_GLOSA" />
+      <enumeration value="SOLIC_STATUS_RECURSO_GLOSA" />
+      <enumeration value="PROTOCOLO_RECEBIMENTO" />
+      <enumeration value="PROTOCOLO_RECEBIMENTO_ANEXO" />
+      <enumeration value="RECEBIMENTO_RECURSO_GLOSA" />
+      <enumeration value="DEMONSTRATIVO_ANALISE_CONTA" />
+      <enumeration value="DEMONSTRATIVO_PAGAMENTO" />
+      <enumeration value="DEMONSTRATIVO_ODONTOLOGIA" />
+      <enumeration value="SITUACAO_PROTOCOLO" />
+      <enumeration value="RESPOSTA_SOLICITACAO" />
+      <enumeration value="AUTORIZACAO_ODONTOLOGIA" />
+      <enumeration value="STATUS_AUTORIZACAO" />
+      <enumeration value="SITUACAO_ELEGIBILIDADE" />
+      <enumeration value="CANCELAMENTO_GUIA_RECIBO" />
+      <enumeration value="RECIBO_COMUNICACAO" />
+      <enumeration value="RESPOSTA_RECURSO_GLOSA" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_tumor">
+    <restriction base="string">
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+      <enumeration value="4" />
+      <enumeration value="5" />
+      <enumeration value="6" />
+      <enumeration value="7" />
+      <enumeration value="8" />
+      <enumeration value="9" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_UF">
+    <restriction base="string">
+      <length value="2" />
+      <enumeration value="11" />
+      <enumeration value="12" />
+      <enumeration value="13" />
+      <enumeration value="14" />
+      <enumeration value="15" />
+      <enumeration value="16" />
+      <enumeration value="17" />
+      <enumeration value="21" />
+      <enumeration value="22" />
+      <enumeration value="23" />
+      <enumeration value="24" />
+      <enumeration value="25" />
+      <enumeration value="26" />
+      <enumeration value="27" />
+      <enumeration value="28" />
+      <enumeration value="29" />
+      <enumeration value="31" />
+      <enumeration value="32" />
+      <enumeration value="33" />
+      <enumeration value="35" />
+      <enumeration value="41" />
+      <enumeration value="42" />
+      <enumeration value="43" />
+      <enumeration value="50" />
+      <enumeration value="51" />
+      <enumeration value="52" />
+      <enumeration value="53" />
+      <enumeration value="98" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_unidadeMedida">
+    <restriction base="string">
+      <length value="3" />
+      <enumeration value="001" />
+      <enumeration value="002" />
+      <enumeration value="003" />
+      <enumeration value="004" />
+      <enumeration value="005" />
+      <enumeration value="006" />
+      <enumeration value="007" />
+      <enumeration value="008" />
+      <enumeration value="009" />
+      <enumeration value="010" />
+      <enumeration value="011" />
+      <enumeration value="012" />
+      <enumeration value="013" />
+      <enumeration value="014" />
+      <enumeration value="015" />
+      <enumeration value="016" />
+      <enumeration value="017" />
+      <enumeration value="018" />
+      <enumeration value="019" />
+      <enumeration value="020" />
+      <enumeration value="021" />
+      <enumeration value="022" />
+      <enumeration value="023" />
+      <enumeration value="024" />
+      <enumeration value="025" />
+      <enumeration value="026" />
+      <enumeration value="027" />
+      <enumeration value="028" />
+      <enumeration value="029" />
+      <enumeration value="030" />
+      <enumeration value="031" />
+      <enumeration value="032" />
+      <enumeration value="033" />
+      <enumeration value="034" />
+      <enumeration value="035" />
+      <enumeration value="036" />
+      <enumeration value="037" />
+      <enumeration value="038" />
+      <enumeration value="039" />
+      <enumeration value="040" />
+      <enumeration value="041" />
+      <enumeration value="042" />
+      <enumeration value="043" />
+      <enumeration value="044" />
+      <enumeration value="045" />
+      <enumeration value="046" />
+      <enumeration value="047" />
+      <enumeration value="048" />
+      <enumeration value="049" />
+      <enumeration value="050" />
+      <enumeration value="051" />
+      <enumeration value="052" />
+      <enumeration value="053" />
+      <enumeration value="054" />
+      <enumeration value="055" />
+      <enumeration value="056" />
+      <enumeration value="057" />
+      <enumeration value="058" />
+      <enumeration value="059" />
+      <enumeration value="060" />
+      <enumeration value="061" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_unidadeTempoCiclo">
+    <restriction base="string">
+      <length value="1" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_versao">
+    <restriction base="string">
+      <enumeration value="3.03.01" />
+      <enumeration value="3.03.02" />
+      <enumeration value="3.03.03" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_versao_monitor">
+    <restriction base="string">
+      <enumeration value="3.03.01" />
+      <enumeration value="3.03.02" />
+      <enumeration value="3.03.03" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_versaoPrestador">
+    <restriction base="string">
+      <enumeration value="001" />
+      <enumeration value="002" />
+      <enumeration value="003" />
+      <enumeration value="004" />
+      <enumeration value="005" />
+      <enumeration value="006" />
+      <enumeration value="007" />
+      <enumeration value="008" />
+      <enumeration value="009" />
+      <enumeration value="010" />
+      <enumeration value="011" />
+      <enumeration value="012" />
+      <enumeration value="013" />
+      <enumeration value="014" />
+      <enumeration value="015" />
+      <enumeration value="016" />
+      <enumeration value="017" />
+      <enumeration value="018" />
+      <enumeration value="019" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_viaDeAcesso">
+    <restriction base="string">
+      <maxLength value="1" />
+      <enumeration value="1" />
+      <enumeration value="2" />
+      <enumeration value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="dm_viaAdministracao">
+    <restriction base="string">
+      <maxLength value="2" />
+      <enumeration value="01" />
+      <enumeration value="02" />
+      <enumeration value="03" />
+      <enumeration value="04" />
+      <enumeration value="05" />
+      <enumeration value="06" />
+      <enumeration value="07" />
+      <enumeration value="08" />
+      <enumeration value="09" />
+      <enumeration value="10" />
+      <enumeration value="11" />
+      <enumeration value="12" />
+      <enumeration value="13" />
+      <enumeration value="14" />
+      <enumeration value="15" />
+      <enumeration value="16" />
+      <enumeration value="17" />
+      <enumeration value="18" />
+      <enumeration value="19" />
+      <enumeration value="20" />
+      <enumeration value="21" />
+      <enumeration value="22" />
+      <enumeration value="23" />
+      <enumeration value="24" />
+      <enumeration value="25" />
+      <enumeration value="26" />
+      <enumeration value="27" />
+      <enumeration value="28" />
+      <enumeration value="29" />
+      <enumeration value="30" />
+      <enumeration value="31" />
+      <enumeration value="32" />
+      <enumeration value="33" />
+      <enumeration value="34" />
+      <enumeration value="35" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto7Padrao">
+    <restriction base="string">
+      <pattern value="[0-9]{1,7}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto15Padrao">
+    <restriction base="string">
+      <pattern value="[0-9]{1,15}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto20Padrao">
+    <restriction base="string">
+      <pattern value="[a-zA-Z0-9]{1,20}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_CNPJCPFPadrao">
+    <restriction base="string">
+      <pattern value="[0-9]{11,14}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_grupoProcedimento">
+    <restriction base="string">
+      <pattern value="[0-9]{3}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_codigoProcedimento">
+    <restriction base="string">
+      <pattern value="[a-zA-Z0-9]{1,10}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_dataPadrao">
+    <restriction base="date">
+      <minInclusive value="1850-01-01" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_CNPJ">
+    <restriction base="string">
+      <pattern value="[0-9]{14}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_CPF">
+    <restriction base="string">
+      <pattern value="[0-9]{11}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_competencia">
+    <restriction base="string">
+      <pattern value="[0-9]{4}[0-9]{2}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_data">
+    <restriction base="date" />
+  </simpleType>
+  <simpleType name="st_dataHora">
+    <restriction base="dateTime" />
+  </simpleType>
+  <simpleType name="st_decimal3-2">
+    <restriction base="decimal">
+      <totalDigits value="3" />
+      <fractionDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal4-2">
+    <restriction base="decimal">
+      <totalDigits value="4" />
+      <fractionDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal5-2">
+    <restriction base="decimal">
+      <totalDigits value="5" />
+      <fractionDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal7-2">
+    <restriction base="decimal">
+      <totalDigits value="7" />
+      <fractionDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal8-2">
+    <restriction base="decimal">
+      <totalDigits value="8" />
+      <fractionDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal9-2">
+    <restriction base="decimal">
+      <totalDigits value="9" />
+      <fractionDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal7-4">
+    <restriction base="decimal">
+      <totalDigits value="7" />
+      <fractionDigits value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal8-4">
+    <restriction base="decimal">
+      <totalDigits value="8" />
+      <fractionDigits value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal10-2">
+    <restriction base="decimal">
+      <fractionDigits value="2" />
+      <totalDigits value="10" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal12-2">
+    <restriction base="decimal">
+      <totalDigits value="12" />
+      <fractionDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_decimal12-4">
+    <restriction base="decimal">
+      <totalDigits value="12" />
+      <fractionDigits value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_hora">
+    <restriction base="time" />
+  </simpleType>
+  <simpleType name="st_logico">
+    <restriction base="boolean" />
+  </simpleType>
+  <simpleType name="st_numerico2">
+    <restriction base="integer">
+      <totalDigits value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_numerico3">
+    <restriction base="integer">
+      <totalDigits value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_numerico4">
+    <restriction base="integer">
+      <totalDigits value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_numerico5">
+    <restriction base="integer">
+      <totalDigits value="5" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_numerico8">
+    <restriction base="integer">
+      <totalDigits value="8" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_numerico12">
+    <restriction base="integer">
+      <totalDigits value="12" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_registroANS">
+    <restriction base="string">
+      <maxLength value="6" />
+      <pattern value="[0-9]{6}" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto1">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="1" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto2">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="2" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto3">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="3" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto4">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="4" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto5">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="5" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto6">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="6" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto7">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="7" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto8">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="8" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto10">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="10" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto11">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="11" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto12">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="12" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto14">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="14" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto15">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="15" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto20">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="20" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto30">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="30" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto32">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="32" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto40">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="40" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto60">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="60" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto70">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="70" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto100">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="100" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto150">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="150" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto500">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="500" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_texto1000">
+    <restriction base="string">
+      <minLength value="1" />
+      <maxLength value="1000" />
+    </restriction>
+  </simpleType>
+  <simpleType name="st_tissFault">
+    <restriction base="string">
+      <enumeration value="DestinatarioInvalido" />
+      <enumeration value="RemetenteInvalido" />
+      <enumeration value="LoginInvalido" />
+      <enumeration value="VersaoInvalida" />
+      <enumeration value="HashInvalido" />
+      <enumeration value="SchemaInvalido" />
+      <enumeration value="ErroInesperadoServidor" />
+    </restriction>
+  </simpleType>
+</schema>

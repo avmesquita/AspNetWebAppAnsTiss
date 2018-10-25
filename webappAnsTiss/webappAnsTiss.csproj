@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23A50DF1-F9E6-44FA-953D-65351A34C1CE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>webappAnsTiss</RootNamespace>
+    <AssemblyName>webappAnsTiss</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsSolicitacaoProcedimento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissCancelaGuia\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissComunicacaoBeneficiario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissLoteAnexo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissLoteGuias\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissRecursoGlosa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissSolicitacaoStatusAutorizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissSolicitacaoStatusProtocolo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsTissVerificaElegibilidade\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Web References\wsTissCancelaGuia\reciboCancelaGuiaWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsTissCancelaGuia\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\wsSolicitacaoProcedimento\autorizacaoProcedimentoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsSolicitacaoProcedimento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Home\ANSText.cshtml" />
+    <None Include="Web References\wsSolicitacaoProcedimento\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsSolicitacaoProcedimento\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsSolicitacaoProcedimento\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsSolicitacaoProcedimento\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsSolicitacaoProcedimento\tissSolicitacaoProcedimento.wsdl" />
+    <None Include="Web References\wsSolicitacaoProcedimento\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsSolicitacaoProcedimento\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsSolicitacaoProcedimento\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissCancelaGuia\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissCancelaGuia\tissCancelaGuia.wsdl" />
+    <None Include="Web References\wsTissCancelaGuia\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissCancelaGuia\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissCancelaGuia\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissCancelaGuia\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissCancelaGuia\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissCancelaGuia\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissComunicacaoBeneficiario\reciboComunicacaoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsTissComunicacaoBeneficiario\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\wsTissComunicacaoBeneficiario\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissComunicacaoBeneficiario\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissComunicacaoBeneficiario\tissComunicacaoBeneficiario.wsdl" />
+    <None Include="Web References\wsTissComunicacaoBeneficiario\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissComunicacaoBeneficiario\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissComunicacaoBeneficiario\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissComunicacaoBeneficiario\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissComunicacaoBeneficiario\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissLoteAnexo\protocoloRecebimentoAnexoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsTissLoteAnexo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\wsTissLoteAnexo\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteAnexo\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteAnexo\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteAnexo\tissLoteAnexo.wsdl" />
+    <None Include="Web References\wsTissLoteAnexo\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteAnexo\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteAnexo\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteAnexo\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissLoteGuias\protocoloRecebimentoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsTissLoteGuias\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\wsTissLoteGuias\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteGuias\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteGuias\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteGuias\tissLoteGuias.wsdl" />
+    <None Include="Web References\wsTissLoteGuias\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteGuias\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteGuias\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissLoteGuias\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissRecursoGlosa\protocoloRecebimentoRecursoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsTissRecursoGlosa\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\wsTissRecursoGlosa\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissRecursoGlosa\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissRecursoGlosa\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissRecursoGlosa\tissRecursoGlosa.wsdl" />
+    <None Include="Web References\wsTissRecursoGlosa\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissRecursoGlosa\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissRecursoGlosa\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissRecursoGlosa\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\demonstrativoRetornoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\tissSolicitacaoDemonstrativoRetorno.wsdl" />
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoDemonstrativoRetorno\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissSolicitacaoStatusAutorizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\wsTissSolicitacaoStatusAutorizacao\situacaoAutorizacaoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\tissSolicitacaoStatusAutorizacao.wsdl" />
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusAutorizacao\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissSolicitacaoStatusProtocolo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\wsTissSolicitacaoStatusProtocolo\situacaoProtocoloWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\tissSolicitacaoStatusProtocolo.wsdl" />
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusProtocolo\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\situacaoProtocoloRecursoWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\tissSolicitacaoStatusProtocoloRecurso.wsdl" />
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissSolicitacaoStatusRecursoGlosa\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Web References\wsTissVerificaElegibilidade\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\wsTissVerificaElegibilidade\respostaElegibilidadeWS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\wsTissVerificaElegibilidade\tissAssinaturaDigital_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissVerificaElegibilidade\tissComplexTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissVerificaElegibilidade\tissGuiasV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissVerificaElegibilidade\tissSimpleTypesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissVerificaElegibilidade\tissV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissVerificaElegibilidade\tissVerificaElegibilidade.wsdl" />
+    <None Include="Web References\wsTissVerificaElegibilidade\tissWebServicesV3_03_03.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\wsTissVerificaElegibilidade\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissCancelaGuiaV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissCancelaGuia\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissCancelaGuiaV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissCancelaGuia_tissCancelaGuia</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissComunicacaoBeneficiarioV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissComunicacaoBeneficiario\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissComunicacaoBeneficiarioV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissComunicacaoBeneficiario_tissComunicacaoBeneficiario</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissLoteAnexoV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissLoteAnexo\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissLoteAnexoV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissLoteAnexo_tissLoteAnexo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissLoteGuiasV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissLoteGuias\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissLoteGuiasV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissLoteGuias_tissLoteGuias</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissRecursoGlosaV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissRecursoGlosa\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissRecursoGlosaV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissRecursoGlosa_tissRecursoGlosa</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoDemonstrativoRetornoV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissSolicitacaoDemonstrativoRetorno\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoDemonstrativoRetornoV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissSolicitacaoDemonstrativoRetorno_tissSolicitacaoDemonstrativoRetorno</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoProcedimentoV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsSolicitacaoProcedimento\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoProcedimentoV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsSolicitacaoProcedimento_tissSolicitacaoProcedimento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoStatusAutorizacaoV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissSolicitacaoStatusAutorizacao\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoStatusAutorizacaoV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissSolicitacaoStatusAutorizacao_tissSolicitacaoStatusAutorizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoStatusProtocoloV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissSolicitacaoStatusProtocolo\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoStatusProtocoloV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissSolicitacaoStatusProtocolo_tissSolicitacaoStatusProtocolo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoStatusRecursoGlosaV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissSolicitacaoStatusRecursoGlosa\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissSolicitacaoStatusRecursoGlosaV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissSolicitacaoStatusRecursoGlosa_tissSolicitacaoStatusProtocoloRecurso</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissVerificaElegibilidadeV3_03_03.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsTissVerificaElegibilidade\</RelPath>
+      <UpdateFromURL>C:\Projetos\StackOverflowTests\ANS-TISS\Padrao_TISS_Comunicação 030303\tissVerificaElegibilidadeV3_03_03.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>webappAnsTiss_wsTissVerificaElegibilidade_tissVerificaElegibilidade</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25812</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25812/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
